@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: 1BAS24021
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
