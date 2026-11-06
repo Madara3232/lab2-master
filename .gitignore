@@ -1,0 +1,6 @@
+/target/
+/.maven/
+.env
+.env.*
+!.env.example
+/.idea/

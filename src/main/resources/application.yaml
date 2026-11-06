@@ -1,6 +1,21 @@
 spring:
   application:
-    name: 1BAS24021
+    name: Lab 3-4
+  config:
+    import: optional:file:.env[.properties]
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
   jackson:
     deserialization:
       fail-on-unknown-properties: true
+
+server:
+  address: 127.0.0.1
+  servlet:
+    session:
+      tracking-modes: cookie
+      cookie:
+        http-only: true
+        same-site: strict
